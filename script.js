@@ -4,9 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   tabla.addEventListener("click", (e) => {
     if (cont % 2 == 0) {
       if (e.target.nodeName == "TD") {
-        if (cont >= 9) {
-          e.target.textContent = "O";
-          cont++;
+        if (cont == 9) {
+          alert("Enhorabuena EMPATARON");
         } else {
           if (e.target.textContent == "") {
             e.target.textContent = "O";
@@ -16,9 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     } else {
       if (e.target.nodeName == "TD") {
-        if (cont >= 9) {
-          e.target.textContent = "X";
-          cont++;
+        if (cont == 9) {
+          alert("Enhorabuena EMPATARON");
         } else {
           if (e.target.textContent == "") {
             e.target.textContent = "X";
