@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Enhorabuena EMPATARON");
         } else {
           if (e.target.textContent == "") {
-            e.target.textContent = "O";
+            e.target.innerHTML = '<img src="./o.png"><p>o<p>';
             cont++;
           }
         }
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Enhorabuena EMPATARON");
         } else {
           if (e.target.textContent == "") {
-            e.target.textContent = "X";
+            e.target.innerHTML = '<img src="./x.png"><p>x<p>';
             cont++;
           }
         }
